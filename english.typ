@@ -5,7 +5,7 @@
 
 = #emoji.page.pencil Summary
 
-Final-year student of computer science engineering. Interested in software development, security, low-level programming, algorithms and data structures, mathematics, and education.a
+Final-year student of computer science engineering. Interested in software development, security, low-level programming, algorithms and data structures, mathematics, and education.
 
 = #emoji.mortarboard Education
 
