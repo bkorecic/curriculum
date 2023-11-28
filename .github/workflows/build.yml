@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3 # Sets the working directory
 
-      # Set config from secrets
+      # Set config from secrets, download and run Typst compiler
       - name: Add secret variables to conf.toml
         env:
           PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
@@ -22,10 +22,6 @@ jobs:
           echo "phone = $PHONE_NUMBER" >> config.toml
           echo "email = $EMAIL" >> config.toml
           echo "redact = true" >> config.toml
-      
-      # Download Typst and compile
-      - name: Typst
-        run: |
           wget https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
           tar -xf typst-x86_64-unknown-linux-musl.tar.xz
           typst-x86_64-unknown-linux-musl/typst compile --font-path=fonts/ english.typ
