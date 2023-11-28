@@ -19,8 +19,8 @@ jobs:
           PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
           EMAIL: ${{ secrets.EMAIL }}
         run: |
-          echo "phone = $PHONE_NUMBER" >> conf.toml
-          echo "email = $EMAIL" >> conf.toml
+          echo "phone = \"$PHONE_NUMBER\"" >> conf.toml
+          echo "email = \"$EMAIL\"" >> conf.toml
           echo "redact = true" >> conf.toml
 
       - name: Download Typst and compile
