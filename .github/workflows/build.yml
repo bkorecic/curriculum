@@ -19,9 +19,9 @@ jobs:
           PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
           EMAIL: ${{ secrets.EMAIL }}
         run: |
-          echo "phone = $PHONE_NUMBER" >> config.toml
-          echo "email = $EMAIL" >> config.toml
-          echo "redact = true" >> config.toml
+          echo "phone = $PHONE_NUMBER" >> conf.toml
+          echo "email = $EMAIL" >> conf.toml
+          echo "redact = true" >> conf.toml
           wget https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
           tar -xf typst-x86_64-unknown-linux-musl.tar.xz
           typst-x86_64-unknown-linux-musl/typst compile --font-path=fonts/ english.typ
