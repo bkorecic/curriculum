@@ -5,7 +5,7 @@
 
 = #emoji.page.pencil Summary
 
-Final-year student of computer science engineering. Interested in software development, security, low-level programming, algorithms and data structures, mathematics, and education.
+Currently pursuing a Master's degree in Computer Science. Interested in software development, security, low-level programming, algorithms and data structures, mathematics, and education.
 
 = #emoji.mortarboard Education
 
@@ -13,7 +13,14 @@ Final-year student of computer science engineering. Interested in software devel
   title: [Universidad de Chile],
   subtitle: [Computer Science Engineering],
   location: [Santiago, Chile],
-  date: [March 2018 -- Present],
+  date: [2018 -- Present],
+)
+
+#entry(
+  title: [Universidad de Chile],
+  subtitle: [MSc. in Computer Science],
+  location: [Santiago, Chile],
+  date: [2024 -- Present],
 )
 
 = #emoji.wrench Experience
@@ -85,7 +92,7 @@ Final-year student of computer science engineering. Interested in software devel
   location: [Santiago, Chile],
   date: [2020 -- Present],
   description: (
-    [CC4005 Competitive Programming (2021, 2022 and 2023).],
+    [CC4005 Competitive Programming (2021 to 2024).],
     [CC3101 Discrete Mathematics for Computer Science (2023).],
     [CC3301 Systems Programming (2021 and 2022).],
     [CC3003 Algorithms and Data Structures (2020 and 2021).]
@@ -98,9 +105,10 @@ Final-year student of computer science engineering. Interested in software devel
   title: [International Collegiate Programming Contest],
   subtitle: [Competitor],
   description: (
-    [*ICPC 2021:* Placed 6th in the South America/South finals. First place in Chile],
-    [*ICPC 2019:* Placed 16th in the South America/South finals. Third place in Chile],
-    [*ICPC 2018:* Placed 31st in the South America/South finals. Sixth place in Chile],
+    [*ICPC 2023:* Placed 7th in the South America/South finals. Second place in Chile. Qualified to the 2024 ICPC Latin America Championship in Guadalajara, Mexico.],
+    [*ICPC 2021:* Placed 6th in the South America/South finals. First place in Chile.],
+    [*ICPC 2019:* Placed 16th in the South America/South finals. Third place in Chile.],
+    [*ICPC 2018:* Placed 31st in the South America/South finals. Sixth place in Chile.],
   )
 )
 
