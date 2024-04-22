@@ -19,6 +19,17 @@ Final-year student of computer science engineering. Interested in software devel
 = #emoji.wrench Experience
 
 #entry(
+  title: [Inria],
+  subtitle: [Research Intern],
+  location: [Paris, France],
+  date: [January 2024 -- April 2024],
+  description: (
+    [Three month internship in the Inria-AIO team.],
+    [Participated in various academic projects, including topics like hardware security, embedded systems, IoT and multi-robot systems.]
+  )
+)
+
+#entry(
   title: [Millennium Institute Foundational Research on Data],
   subtitle: [Software Engineering Intern],
   location: [Santiago, Chile],
