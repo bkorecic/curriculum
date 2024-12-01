@@ -1,13 +1,30 @@
-#import "template.typ": conf, entry, emoji, sensitive
+#import "template.typ": conf, entry, sensitive
 
 // Template setup
-#show: conf
+#show: conf.with(update-date: [December 1, 2024])
 
-= #emoji.page.pencil Summary
+#show link: it => underline(strong(it))
 
-Currently pursuing a Master's degree in Computer Science. Interested in software development, security, low-level programming, algorithms and data structures, mathematics, and education.
+#let icon-width = 25pt
+#let icon-heading(icon, text) = {
+  grid(
+    columns: (icon-width, auto),
+    grid.cell(
+      align: center,
+      icon
+    ),
+    grid.cell(
+      align: bottom,
+      text
+    )
+  )
+}
 
-= #emoji.mortarboard Education
+= #icon-heading(emoji.silhouette, [Summary])
+
+Currently pursuing a Master's degree in Computer Science. Interested in security, embedded systems, algorithms and data structures, software development, mathematics, and education.
+
+= #icon-heading(emoji.mortarboard, [Education])
 
 #entry(
   title: [Universidad de Chile],
@@ -23,7 +40,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
   date: [2024 -- Present],
 )
 
-= #emoji.wrench Experience
+= #icon-heading(emoji.wrench, [Experience])
 
 #entry(
   title: [Inria],
@@ -32,8 +49,8 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
   date: [January 2024 -- April 2024],
   description: (
     [Three month internship in the Inria-AIO team.],
-    [Participated in various academic projects, including topics like hardware security, embedded systems, IoT and multi-robot systems.]
-  )
+    [Participated in various academic projects, including topics like hardware security, embedded systems, IoT and multi-robot systems.],
+  ),
 )
 
 #entry(
@@ -43,8 +60,8 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
   date: [January 2022 -- February 2022],
   description: (
     [Modernization of a C++ project.],
-    [Reimplementation of compression and search algorithms for large string dictionaries.]
-  )
+    [Reimplementation of compression and search algorithms for large string dictionaries.],
+  ),
 )
 
 #entry(
@@ -55,7 +72,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
   description: (
     [Development of a web application for performing CRUD operations on a database and interacting with an optimizer.],
     [Creation of a static website built with Hugo for internal company documentation.],
-  )
+  ),
 )
 
 #entry(
@@ -65,25 +82,14 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
   date: [August 2020 -- January 2021],
   description: (
     [Open source web application created with Django used for the grading of students' assignments in computer science subjects.],
-  )
-)
-
-#entry(
-  title: [Preuniversitario José Carrasco Tapia],
-  location: [Santiago, Chile],
-  date: [2020],
-  description: (
-    [Volunteered as mathematics teacher at an institution that assists economically disadvantaged students in accessing higher education.],
-  )
+  ),
 )
 
 #entry(
   title: [Brazilian ICPC Summer School],
   location: [Campinas, Brasil],
   date: [January 2020],
-  description: (
-    [Participated in the ICPC Brazil Summer Camp, World Finals class.],
-  )
+  description: ([Participated in the ICPC Brazil Summer Camp, World Finals class.],),
 )
 
 #entry(
@@ -94,12 +100,46 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
   description: (
     [CC4005 Competitive Programming (2021 to 2024).],
     [CC3101 Discrete Mathematics for Computer Science (2023).],
-    [CC3301 Systems Programming (2021 and 2022).],
-    [CC3003 Algorithms and Data Structures (2020 and 2021).]
-  )
+    [CC3301 Systems Programming (2021, 2022 and 2024).],
+    [CC3003 Algorithms and Data Structures (2020 and 2021).],
+  ),
 )
 
-= #emoji.trophy Achievements
+#pagebreak()
+= #icon-heading(emoji.page.pencil, [Publications])
+- *Ultra-Low Power DNN-based TSCH Scheduling at the Edge using the MAX78000.* _Martina Balbi, Erman Okman, Blaz Korecic, Lance Doherty, Thomas Watteyne._ Accepted by the 3rd International Conference on Embedded Systems and Artificial Intelligence (ESAI).
+- #link("https://doi.org/10.1109/CrystalFreeIoT62484.2024.00009")[Single-Chip Motes and SRAM PUF: Feasibility Study.] _Sara Faour, Blaz Korecic, Mališa Vučinić, Filip Maksimovic, David C Burnett, et al._ In proceedings of the 2024 IEEE Workshop on Crystal-Free/-Less Radio and System-Based Research for IoT (CrystalFreeIoT).
+
+= #icon-heading(emoji.star, [Volunteering])
+
+#entry(
+  title: [Chilean ICPC Winter Training Camp #link("https://cipc.progcomp.cl")[(CIPC)]],
+  location: [Concepción, Chile],
+  date: [2024],
+  description: (
+    [Organized a Chilean competitive programming winter school, with the participacion of over 60 university students across the country.],
+  ),
+)
+
+#entry(
+  title: [Computer Science Department Student Council #link("https://cadcc.cl")[(CaDCC)]],
+  date: [2024],
+  description: (
+    [Member of the Computer Science Department Student Council, actively assisting in organizing various activities throughout the year.],
+  ),
+)
+
+#entry(
+  title: [Preuniversitario José Carrasco Tapia],
+  location: [Santiago, Chile],
+  date: [2020],
+  description: (
+    [Volunteered as mathematics teacher at an institution that assists economically disadvantaged students in accessing higher education.],
+  ),
+)
+
+
+= #icon-heading(emoji.trophy, [Achievements])
 
 #entry(
   title: [International Collegiate Programming Contest],
@@ -109,29 +149,30 @@ Currently pursuing a Master's degree in Computer Science. Interested in software
     [*ICPC 2021:* Placed 6th in the South America/South finals. First place in Chile.],
     [*ICPC 2019:* Placed 16th in the South America/South finals. Third place in Chile.],
     [*ICPC 2018:* Placed 31st in the South America/South finals. Sixth place in Chile.],
-  )
+  ),
 )
 
 #entry(
   title: [IEEExtreme],
   subtitle: [Competitor],
   description: (
+    [*IEEExtreme 18.0:* Placed 59th out of 8785 teams worldwide.],
     [*IEEExtreme 15.0:* Placed 21st out of 2402 teams worldwide.],
     [*IEEExtreme 13.0:* Placed 116th out of 2534 teams worldwide.],
-  )
+  ),
 )
 
 #columns[
-  = #emoji.computer Skills
-  
+  = #icon-heading(emoji.computer, [Skills])
+
   - *Programming:* C, C++, Python, Java, SQL, Javascript, Bash, Scheme, OCaml.
-  - *Frameworks:* React, Django, Flask, Qt.
+  - *Frameworks:* React, Django, Flask, FastAPI, Qt.
   - *Other:* Docker, Linux, Git, PostgreSQL, NoSQL, Firebase, AWS, DigitalOcean.
-  
+
   #colbreak()
-  
-  = #emoji.globe.meridian Languages
-  
+
+  = #icon-heading(emoji.globe.meridian, [Languages])
+
   - *Spanish:* Native
   - *English:* Advanced
 ]
