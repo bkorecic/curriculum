@@ -1,6 +1,6 @@
 #import "@preview/fontawesome:0.5.0": *
 
-#let primary-color = rgb(60, 112, 180)
+#let primary-color = rgb(0, 112, 180)
 #let toml-conf = toml("conf.toml")
 
 // Redacts content if "sensitive" is true in conf.toml
