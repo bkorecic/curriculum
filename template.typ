@@ -49,7 +49,7 @@
     )
   }
   set page(paper: "us-letter", footer: footer, margin: (x: 1cm, y: 1.25cm))
-  set text(lang: lang, size: 11pt)
+  set text(lang: lang, size: 12pt)
   // Formato de headings. Por defecto (P1., P2., etc)
   show heading: it => [
     #set block(above: 0.8em, below: 0em)
@@ -90,9 +90,9 @@
     none
   }
 
-  grid(
+  block(breakable: false, grid(
     columns: (1fr, auto),
-    list(tit + subt + desc), align(right)[#location \ _ #date _],
-  )
+    list(tit + subt + desc), align(right)[#emph[#location \ #date]],
+  ))
 }
 )

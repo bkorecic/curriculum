@@ -28,16 +28,23 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
 #entry(
   title: [Universidad de Chile],
-  subtitle: [Computer Science Engineering],
+  subtitle: [_*M.Sc.* |_ Computer Science \ Advisor: Prof. Gonzalo Navarro],
   location: [Santiago, Chile],
-  date: [2018 -- Present],
+  date: [2024 -- Present],
 )
 
 #entry(
   title: [Universidad de Chile],
-  subtitle: [MSc. in Computer Science],
+  subtitle: [_*P.Eng.* |_ Computer Science and Engineering \ Advisor: Prof. Gonzalo Navarro ],
   location: [Santiago, Chile],
-  date: [2024 -- Present],
+  date: [2022 -- Present],
+)
+
+#entry(
+  title: [Universidad de Chile],
+  subtitle: [_*B.Eng.* |_ Computer Science and Engineering],
+  location: [Santiago, Chile],
+  date: [2018 -- 2022],
 )
 
 = #icon-heading(emoji.wrench, [Experience])
@@ -105,7 +112,6 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   ),
 )
 
-#pagebreak()
 = #icon-heading(emoji.page.pencil, [Publications])
 - *Ultra-Low Power DNN-based TSCH Scheduling at the Edge using the MAX78000.* _Martina Balbi, Erman Okman, Blaz Korecic, Lance Doherty, Thomas Watteyne._ Accepted by the 3rd International Conference on Embedded Systems and Artificial Intelligence (ESAI).
 - #link("https://doi.org/10.1109/CrystalFreeIoT62484.2024.00009")[Single-Chip Motes and SRAM PUF: Feasibility Study.] _Sara Faour, Blaz Korecic, Mališa Vučinić, Filip Maksimovic, David C Burnett, et al._ In proceedings of the 2024 IEEE Workshop on Crystal-Free/-Less Radio and System-Based Research for IoT (CrystalFreeIoT).
@@ -126,6 +132,14 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   date: [2024],
   description: (
     [Member of the Computer Science Department Student Council, actively assisting in organizing various activities throughout the year.],
+  ),
+)
+
+#entry(
+  title: [Chilean Olympiad in Informatics #link("https://olimpiada-informatica.cl")[(OCI)]],
+  date: [2021-2024],
+  description: (
+    [Organizer and problem setter for Chile's premier programming competition for secondary school students, which serves as the national qualifier for the International Olympiad in Informatics (IOI).],
   ),
 )
 
@@ -162,7 +176,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   ),
 )
 
-#columns[
+#block(breakable: false, columns[
   = #icon-heading(emoji.computer, [Skills])
 
   - *Programming:* C, C++, Python, Java, SQL, Javascript, Bash, Scheme, OCaml.
@@ -175,4 +189,5 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
   - *Spanish:* Native
   - *English:* Advanced
-]
+  - *French:* Basic
+])
