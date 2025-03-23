@@ -170,7 +170,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   title: [IEEExtreme],
   subtitle: [Competitor],
   description: (
-    [*IEEExtreme 18.0:* Placed 59th out of 8785 teams worldwide.],
+    [*IEEExtreme 18.0:* Placed 45th out of 8785 teams worldwide.],
     [*IEEExtreme 15.0:* Placed 21st out of 2402 teams worldwide.],
     [*IEEExtreme 13.0:* Placed 116th out of 2534 teams worldwide.],
   ),
