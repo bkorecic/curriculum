@@ -179,9 +179,9 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 #block(breakable: false, columns[
   = #icon-heading(emoji.computer, [Skills])
 
-  - *Programming:* C, C++, Python, Java, SQL, Javascript, Bash, Scheme, OCaml.
-  - *Frameworks:* React, Django, Flask, FastAPI, Qt.
-  - *Other:* Docker, Linux, Git, PostgreSQL, NoSQL, Firebase, AWS, DigitalOcean.
+  - *Programming:* C, C++, Python, JavaScript, TypeScript, Java, SQL, Bash, Scheme, Lua, OCaml.
+  - *Frameworks:* React, Next.js, Astro, Django, Flask, FastAPI, Qt.
+  - *Other:* Docker, Linux, Git, CI/CD, PostgreSQL, NoSQL, Firebase, AWS, DigitalOcean.
 
   #colbreak()
 
