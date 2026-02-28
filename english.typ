@@ -55,7 +55,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   location: [Paris, France],
   date: [January 2024 -- April 2024],
   description: (
-    [Three month internship in the Inria-AIO team.],
+    [Collaborated with an international research team for three months.],
     [Participated in various academic projects, including topics like hardware security, embedded systems, IoT and multi-robot systems.],
   ),
 )
@@ -105,7 +105,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   location: [Santiago, Chile],
   date: [2020 -- Present],
   description: (
-    [CC4005 Competitive Programming (2021 to 2024).],
+    [CC4005 Competitive Programming (2021 to 2025).],
     [CC3101 Discrete Mathematics for Computer Science (2023).],
     [CC3301 Systems Programming (2021, 2022 and 2024).],
     [CC3003 Algorithms and Data Structures (2020 and 2021).],
@@ -120,10 +120,9 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
 #entry(
   title: [Chilean ICPC Winter Training Camp #link("https://cipc.progcomp.cl")[(CIPC)]],
-  location: [Concepción, Chile],
-  date: [2024],
+  date: [2024-2025],
   description: (
-    [Organized a Chilean competitive programming winter school, with the participacion of over 60 university students across the country.],
+    [Organizer of an annual free Chilean competitive programming winter school, attended by over 100 university students nationwide.],
   ),
 )
 
@@ -137,7 +136,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
 #entry(
   title: [Chilean Olympiad in Informatics #link("https://olimpiada-informatica.cl")[(OCI)]],
-  date: [2021-2024],
+  date: [2021-2026],
   description: (
     [Organizer and problem setter for Chile's premier programming competition for secondary school students, which serves as the national qualifier for the International Olympiad in Informatics (IOI).],
   ),
