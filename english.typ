@@ -1,7 +1,7 @@
 #import "template.typ": conf, entry, sensitive
 
 // Template setup
-#show: conf.with(update-date: [December 1, 2024])
+#show: conf.with(update-date: [April 2, 2026])
 
 #show link: it => underline(strong(it))
 
