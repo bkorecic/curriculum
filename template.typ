@@ -92,7 +92,8 @@
 
   block(breakable: false, grid(
     columns: (1fr, auto),
-    list(tit + subt + desc), align(right)[
+    list(tit + subt + desc),
+    grid.cell(align: right, inset: (left: 1cm))[
     #set text(fill: luma(20%))
     #emph[#location \ #date]],
   ))

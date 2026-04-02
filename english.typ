@@ -37,7 +37,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   title: [Universidad de Chile],
   subtitle: [_*P.Eng.* |_ Computer Science and Engineering \ Advisor: Prof. Gonzalo Navarro ],
   location: [Santiago, Chile],
-  date: [2022 -- Present],
+  date: [2022 -- 2023],
 )
 
 #entry(
@@ -90,13 +90,6 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   description: (
     [Open source web application created with Django used for the grading of students' assignments in computer science subjects.],
   ),
-)
-
-#entry(
-  title: [Brazilian ICPC Summer School],
-  location: [Campinas, Brasil],
-  date: [January 2020],
-  description: ([Participated in the ICPC Brazil Summer Camp, World Finals class.],),
 )
 
 #entry(
@@ -180,7 +173,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
   - *Programming:* C, C++, Python, JavaScript, TypeScript, Java, SQL, Bash, Scheme, Lua, OCaml.
   - *Frameworks:* React, Next.js, Astro, Django, Flask, FastAPI, Qt.
-  - *Other:* Docker, Linux, Git, CI/CD, PostgreSQL, NoSQL, Firebase, AWS, DigitalOcean.
+  - *Other:* Docker, Linux, Git, GitHub Actions, Firebase, AWS, DigitalOcean, Slurm (HPC).
 
   #colbreak()
 
@@ -188,5 +181,4 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
   - *Spanish:* Native
   - *English:* Advanced
-  - *French:* Basic
 ])
