@@ -36,7 +36,7 @@
       columns: (1fr, 1fr, 1fr),
       grid.cell(
         align: left,
-        [Updated as of #update-date],
+        if lang == "es" [Actualizado al #update-date] else [Updated as of #update-date],
       ),
       grid.cell(
         align: center,

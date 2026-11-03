@@ -21,15 +21,16 @@ jobs:
           wget https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
           tar -xf typst-x86_64-unknown-linux-musl.tar.xz
           typst-x86_64-unknown-linux-musl/typst compile --font-path=fonts/ english.typ
+          typst-x86_64-unknown-linux-musl/typst compile --font-path=fonts/ spanish.typ
 
-      # Commit the generated pdf on top of branch 'pdf'.
+      # Commit the generated pdfs on top of branch 'pdf'.
       - name: Deploy to branch
         run: |
           git fetch --depth 1 origin pdf
           git worktree add pdf-branch FETCH_HEAD
-          cp english.pdf pdf-branch/
+          cp english.pdf spanish.pdf pdf-branch/
           cd pdf-branch
-          git add english.pdf
+          git add english.pdf spanish.pdf
           git diff --cached --quiet && exit 0
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
             commit -m "Update pdf to output generated at ${GITHUB_SHA::7}"
