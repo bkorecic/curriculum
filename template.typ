@@ -61,15 +61,21 @@
     #line(length: 100%, start: (0pt, -7pt))
   ]
 
-  [
-    #text(size: 48pt, fill: primary-color, name)
-    #h(1fr)
-    #link("https://github.com/" + github)[#fa-github(size: 12pt) #github] #h(10pt)
-    #link("https://www.linkedin.com/in/" + linkedin)[#fa-linkedin(size: 12pt) #linkedin] #h(10pt)
-    #fa-envelope() #sensitive(email) #h(10pt)
-    #fa-phone(size: 12pt) #sensitive(phone)
-    #doc
-  ]
+  // Contact items are only shown when set in conf.toml
+  let contacts = (
+    if github != none { link("https://github.com/" + github)[#fa-github(size: 12pt) #github] },
+    if linkedin != none { link("https://www.linkedin.com/in/" + linkedin)[#fa-linkedin(size: 12pt) #linkedin] },
+    if email != none [#fa-envelope() #sensitive(email)],
+    if phone != none [#fa-phone(size: 12pt) #sensitive(phone)],
+  ).filter(c => c != none).map(box)
+
+  grid(
+    columns: (auto, 1fr),
+    column-gutter: 10pt,
+    text(size: 48pt, fill: primary-color, name),
+    grid.cell(align: right + bottom, contacts.join(h(10pt))),
+  )
+  doc
 }
 
 // CV entry
