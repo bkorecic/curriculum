@@ -1,7 +1,7 @@
 #import "template.typ": conf, entry, sensitive
 
 // Template setup
-#show: conf.with(update-date: [April 2, 2026])
+#show: conf.with(update-date: [November 3, 2026])
 
 #show link: it => underline(strong(it))
 
@@ -22,7 +22,7 @@
 
 = #icon-heading(emoji.silhouette, [Summary])
 
-Currently pursuing a Master's degree in Computer Science. Interested in security, embedded systems, algorithms and data structures, software development, mathematics, and education.
+Software Engineer at Alicanto Labs, working on optimization software for strategic mine planning. Currently pursuing a Master's degree in Computer Science. Interested in algorithms and data structures, software development, education, mathematics, security, and embedded systems.
 
 = #icon-heading(emoji.mortarboard, [Education])
 
@@ -42,12 +42,24 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 
 #entry(
   title: [Universidad de Chile],
-  subtitle: [_*B.Eng.* |_ Computer Science and Engineering],
+  subtitle: [_*B.Sc.* |_ Computer Science and Engineering],
   location: [Santiago, Chile],
-  date: [2018 -- 2022],
+  date: [2018 -- 2021],
 )
 
 = #icon-heading(emoji.wrench, [Experience])
+
+#entry(
+  title: [Alicanto Labs],
+  subtitle: [Software Engineer],
+  location: [Santiago, Chile],
+  date: [June 2026 -- Present],
+  description: (
+    [Work on the core engine of Alicanto Solver, an optimization engine for large-scale production scheduling of open-pit and underground mines, used by major mining companies worldwide.],
+    [Bring optimization algorithms from academic research into production, where performance and correctness are critical.],
+    [Make software architecture decisions, focusing on long-term maintainability and extensibility.],
+  ),
+)
 
 #entry(
   title: [Inria],
@@ -57,6 +69,16 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   description: (
     [Collaborated with an international research team for three months.],
     [Participated in various academic projects, including topics like hardware security, embedded systems, IoT and multi-robot systems.],
+  ),
+)
+
+#entry(
+  title: [Instituto Sistemas Complejos de Ingeniería],
+  subtitle: [Software Developer],
+  location: [Santiago, Chile],
+  date: [2023 -- 2024],
+  description: (
+    [Developed a multiplayer browser-based application used to run economic behavioral experiments, supporting research on _"Tradable Consumption Rights: An Experimental Study of Market-Based Redistribution"_ (working paper).],
   ),
 )
 
@@ -96,7 +118,7 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
   title: [Universidad de Chile],
   subtitle: [Teaching Assistant],
   location: [Santiago, Chile],
-  date: [2020 -- Present],
+  date: [2020 -- 2025],
   description: (
     [CC4005 Competitive Programming (2021 to 2025).],
     [CC3101 Discrete Mathematics for Computer Science (2023).],
@@ -112,10 +134,13 @@ Currently pursuing a Master's degree in Computer Science. Interested in security
 = #icon-heading(emoji.star, [Volunteering])
 
 #entry(
-  title: [Chilean ICPC Winter Training Camp #link("https://cipc.progcomp.cl")[(CIPC)]],
-  date: [2024-2025],
+  title: [Chilean Competitive Programming Society (progcompCL)],
+  subtitle: [Co-founder & President],
+  date: [2025-Present],
   description: (
-    [Organizer of an annual free Chilean competitive programming winter school, attended by over 100 university students nationwide.],
+    [Co-founded and preside over a non-profit organization that promotes competitive programming across Chile, sharing responsibility for its administration and finances.],
+    [Organize the Chilean ICPC Winter Training Camp #link("https://cipc.progcomp.cl")[(CIPC)], a free annual winter school attended by over 100 university students nationwide (organizer since 2024).],
+    [Support the organization of the Chilean Olympiad in Informatics (OCI) and the ICPC in Chile.],
   ),
 )
 
