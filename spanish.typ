@@ -80,7 +80,7 @@ Ingeniero de Software en Alicanto Labs, trabajando en software de optimización 
   location: [Santiago, Chile],
   date: [2023 -- 2024],
   description: (
-    [Desarrollo de una aplicación web multijugador para experimentos económicos conductuales, como apoyo a la investigación _"Tradable Consumption Rights: An Experimental Study of Market-Based Redistribution"_ (documento de trabajo).],
+    [Desarrollo de una aplicación web multijugador para experimentos económicos conductuales, como apoyo a la investigación _"Tradable Consumption Rights: An Experimental Study of Market-Based Redistribution"_ (_working paper_).],
   ),
 )
 
@@ -129,8 +129,8 @@ Ingeniero de Software en Alicanto Labs, trabajando en software de optimización 
 )
 
 = #icon-heading(fa-book(), [Publicaciones])
-- *Ultra-Low Power DNN-based TSCH Scheduling at the Edge using the MAX78000.* _Martina Balbi, Erman Okman, Blaz Korecic, Lance Doherty, Thomas Watteyne._ Aceptado en la 3rd International Conference on Embedded Systems and Artificial Intelligence (ESAI).
-- #link("https://doi.org/10.1109/CrystalFreeIoT62484.2024.00009")[Single-Chip Motes and SRAM PUF: Feasibility Study.] _Sara Faour, Blaz Korecic, Mališa Vučinić, Filip Maksimovic, David C Burnett, et al._ En las actas del 2024 IEEE Workshop on Crystal-Free/-Less Radio and System-Based Research for IoT (CrystalFreeIoT).
+- *Ultra-Low Power DNN-based TSCH Scheduling at the Edge using the MAX78000.* _Martina Balbi, Erman Okman, Blaz Korecic, Lance Doherty, Thomas Watteyne._ Accepted by the 3rd International Conference on Embedded Systems and Artificial Intelligence (ESAI).
+- #link("https://doi.org/10.1109/CrystalFreeIoT62484.2024.00009")[Single-Chip Motes and SRAM PUF: Feasibility Study.] _Sara Faour, Blaz Korecic, Mališa Vučinić, Filip Maksimovic, David C Burnett, et al._ In proceedings of the 2024 IEEE Workshop on Crystal-Free/-Less Radio and System-Based Research for IoT (CrystalFreeIoT).
 
 = #icon-heading(fa-hand-holding-heart(), [Voluntariado])
 

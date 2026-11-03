@@ -66,17 +66,17 @@
 
   // Contact items are only shown when set in conf.toml
   let contacts = (
-    if github != none { link("https://github.com/" + github)[#fa-github(size: 12pt) #github] },
-    if linkedin != none { link("https://www.linkedin.com/in/" + linkedin)[#fa-linkedin(size: 12pt) #linkedin] },
+    if github != none { link("https://github.com/" + github)[#fa-github() #github] },
+    if linkedin != none { link("https://www.linkedin.com/in/" + linkedin)[#fa-linkedin() #linkedin] },
     if email != none [#fa-envelope() #sensitive(email)],
-    if phone != none [#fa-phone(size: 12pt) #sensitive(phone)],
+    if phone != none [#fa-phone() #sensitive(phone)],
   ).filter(c => c != none).map(box)
 
   grid(
     columns: (auto, 1fr),
     column-gutter: 10pt,
     text(size: 48pt, fill: primary-color, font: title-font, name),
-    grid.cell(align: right + bottom, contacts.join(h(10pt))),
+    grid.cell(align: right + bottom, text(size: 9.5pt, contacts.join(h(8pt)))),
   )
   doc
 }
