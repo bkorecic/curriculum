@@ -1,4 +1,5 @@
 #import "template.typ": conf, entry, sensitive
+#import "@preview/fontawesome:0.5.0": *
 
 // Template setup
 #show: conf.with(update-date: [November 3, 2026])
@@ -9,6 +10,7 @@
 #let icon-heading(icon, text) = {
   grid(
     columns: (icon-width, auto),
+    column-gutter: 4pt,
     grid.cell(
       align: center,
       icon
@@ -20,11 +22,11 @@
   )
 }
 
-= #icon-heading(emoji.silhouette, [Summary])
+= #icon-heading(fa-user(solid: true), [Summary])
 
 Software Engineer at Alicanto Labs, working on optimization software for strategic mine planning. Currently pursuing a Master's degree in Computer Science. Interested in algorithms and data structures, software development, education, mathematics, security, and embedded systems.
 
-= #icon-heading(emoji.mortarboard, [Education])
+= #icon-heading(fa-graduation-cap(), [Education])
 
 #entry(
   title: [Universidad de Chile],
@@ -47,7 +49,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   date: [2018 -- 2021],
 )
 
-= #icon-heading(emoji.wrench, [Experience])
+= #icon-heading(fa-briefcase(), [Experience])
 
 #entry(
   title: [Alicanto Labs],
@@ -127,11 +129,11 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   ),
 )
 
-= #icon-heading(emoji.page.pencil, [Publications])
+= #icon-heading(fa-book(), [Publications])
 - *Ultra-Low Power DNN-based TSCH Scheduling at the Edge using the MAX78000.* _Martina Balbi, Erman Okman, Blaz Korecic, Lance Doherty, Thomas Watteyne._ Accepted by the 3rd International Conference on Embedded Systems and Artificial Intelligence (ESAI).
 - #link("https://doi.org/10.1109/CrystalFreeIoT62484.2024.00009")[Single-Chip Motes and SRAM PUF: Feasibility Study.] _Sara Faour, Blaz Korecic, Mališa Vučinić, Filip Maksimovic, David C Burnett, et al._ In proceedings of the 2024 IEEE Workshop on Crystal-Free/-Less Radio and System-Based Research for IoT (CrystalFreeIoT).
 
-= #icon-heading(emoji.star, [Volunteering])
+= #icon-heading(fa-hand-holding-heart(), [Volunteering])
 
 #entry(
   title: [Chilean Competitive Programming Society (progcompCL)],
@@ -170,7 +172,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 )
 
 
-= #icon-heading(emoji.trophy, [Achievements])
+= #icon-heading(fa-trophy(), [Achievements])
 
 #entry(
   title: [International Collegiate Programming Contest],
@@ -194,7 +196,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 )
 
 #block(breakable: false, columns[
-  = #icon-heading(emoji.computer, [Skills])
+  = #icon-heading(fa-code(), [Skills])
 
   - *Programming:* C, C++, Python, JavaScript, TypeScript, Java, SQL, Bash, Scheme, Lua, OCaml.
   - *Frameworks:* React, Next.js, Astro, Django, Flask, FastAPI, Qt.
@@ -202,7 +204,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 
   #colbreak()
 
-  = #icon-heading(emoji.globe.meridian, [Languages])
+  = #icon-heading(fa-language(), [Languages])
 
   - *Spanish:* Native
   - *English:* Advanced
