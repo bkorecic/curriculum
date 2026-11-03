@@ -1,6 +1,8 @@
 #import "@preview/fontawesome:0.5.0": *
 
 #let primary-color = rgb(0, 112, 180)
+#let title-font = "DM Serif Display"
+#let body-font = "Lora"
 #let toml-conf = toml("conf.toml")
 
 // Redacts content if "sensitive" is true in conf.toml
@@ -50,14 +52,15 @@
     )
   }
   set page(paper: "us-letter", footer: footer, margin: (x: 1cm, y: 1cm))
-  set text(lang: lang, size: 11pt)
+  set text(lang: lang, size: 10.5pt, font: body-font)
   set par(leading: 0.55em)
   // Formato de headings. Por defecto (P1., P2., etc)
   show heading: it => [
     #set block(above: 0.8em, below: 0em)
     #set text(fill: primary-color)
     #set line(stroke: primary-color)
-    #smallcaps(it)
+    #set text(font: title-font)
+    #it
     #line(length: 100%, start: (0pt, -7pt))
   ]
 
@@ -72,7 +75,7 @@
   grid(
     columns: (auto, 1fr),
     column-gutter: 10pt,
-    text(size: 48pt, fill: primary-color, name),
+    text(size: 48pt, fill: primary-color, font: title-font, name),
     grid.cell(align: right + bottom, contacts.join(h(10pt))),
   )
   doc
