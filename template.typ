@@ -19,6 +19,7 @@
 #let conf(
   name: toml-conf.at("name", default: none),
   github: toml-conf.at("github", default: none),
+  linkedin: toml-conf.at("linkedin", default: none),
   email: toml-conf.at("email", default: none),
   phone: toml-conf.at("phone", default: none),
   update-date: none,
@@ -48,8 +49,9 @@
       )
     )
   }
-  set page(paper: "us-letter", footer: footer, margin: (x: 1cm, y: 1.25cm))
-  set text(lang: lang, size: 12pt)
+  set page(paper: "us-letter", footer: footer, margin: (x: 1cm, y: 1cm))
+  set text(lang: lang, size: 11pt)
+  set par(leading: 0.55em)
   // Formato de headings. Por defecto (P1., P2., etc)
   show heading: it => [
     #set block(above: 0.8em, below: 0em)
@@ -62,7 +64,8 @@
   [
     #text(size: 48pt, fill: primary-color, name)
     #h(1fr)
-    #link("https://github.com/" + github)[#fa-github(size: 13pt) #github] #h(10pt)
+    #link("https://github.com/" + github)[#fa-github(size: 12pt) #github] #h(10pt)
+    #link("https://www.linkedin.com/in/" + linkedin)[#fa-linkedin(size: 12pt) #linkedin] #h(10pt)
     #fa-envelope() #sensitive(email) #h(10pt)
     #fa-phone(size: 12pt) #sensitive(phone)
     #doc
@@ -77,7 +80,7 @@
   date: none,
   description: none,
 ) = {
-  set list(marker: ([•], [◦]))
+  set list(marker: [•])
   let tit = [*#title*]
   let desc = if description != none {
     list(..description, tight: true)
@@ -90,12 +93,18 @@
     none
   }
 
-  block(breakable: false, grid(
-    columns: (1fr, auto),
-    list(tit + subt + desc),
-    grid.cell(align: right, inset: (left: 1cm))[
-    #set text(fill: luma(20%))
-    #emph[#location \ #date]],
-  ))
+  let body = tit + subt + desc
+  if location == none and date == none {
+    block(breakable: false, body)
+  } else {
+    block(breakable: false, grid(
+      columns: (1fr, 3cm),
+      column-gutter: 0.5cm,
+      body,
+      grid.cell(align: right)[
+      #set text(fill: luma(20%))
+      #emph[#location \ #date]],
+    ))
+  }
 }
 )

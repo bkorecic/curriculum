@@ -55,7 +55,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   title: [Alicanto Labs],
   subtitle: [Software Engineer],
   location: [Santiago, Chile],
-  date: [June 2026 -- Present],
+  date: [2026 -- Present],
   description: (
     [Work on the core engine of Alicanto Solver, an optimization engine for large-scale production scheduling of open-pit and underground mines, used by major mining companies worldwide.],
     [Bring optimization algorithms from academic research into production, where performance and correctness are critical.],
@@ -67,7 +67,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   title: [Inria],
   subtitle: [Research Intern],
   location: [Paris, France],
-  date: [January 2024 -- April 2024],
+  date: [2024],
   description: (
     [Collaborated with an international research team for three months.],
     [Participated in various academic projects, including topics like hardware security, embedded systems, IoT and multi-robot systems.],
@@ -88,10 +88,10 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   title: [Millennium Institute Foundational Research on Data],
   subtitle: [Software Engineering Intern],
   location: [Santiago, Chile],
-  date: [January 2022 -- February 2022],
+  date: [2022],
   description: (
-    [Modernization of a C++ project.],
-    [Reimplementation of compression and search algorithms for large string dictionaries.],
+    [Modernized a C++ project.],
+    [Reimplemented compression and search algorithms for large string dictionaries.],
   ),
 )
 
@@ -99,10 +99,10 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   title: [SARCAN],
   subtitle: [Software Engineering Intern],
   location: [Santiago, Chile],
-  date: [January 2021 -- February 2021],
+  date: [2021],
   description: (
-    [Development of a web application for performing CRUD operations on a database and interacting with an optimizer.],
-    [Creation of a static website built with Hugo for internal company documentation.],
+    [Developed a web application for performing CRUD operations on a database and interacting with an optimizer.],
+    [Created a static website with Hugo for internal company documentation.],
   ),
 )
 
@@ -110,9 +110,9 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   title: [Easy Program Checking],
   subtitle: [Developer],
   location: [Santiago, Chile],
-  date: [August 2020 -- January 2021],
+  date: [2020 -- 2021],
   description: (
-    [Open source web application created with Django used for the grading of students' assignments in computer science subjects.],
+    [Developed features for an open source Django web application used to grade students' assignments in computer science courses.],
   ),
 )
 
@@ -138,7 +138,8 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 #entry(
   title: [Chilean Competitive Programming Society (progcompCL)],
   subtitle: [Co-founder & President],
-  date: [2025-Present],
+  location: [Chile],
+  date: [2025 -- Present],
   description: (
     [Co-founded and preside over a non-profit organization that promotes competitive programming across Chile, sharing responsibility for its administration and finances.],
     [Organize the Chilean ICPC Winter Training Camp #link("https://cipc.progcomp.cl")[(CIPC)], a free annual winter school attended by over 100 university students nationwide (organizer since 2024).],
@@ -148,17 +149,19 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 
 #entry(
   title: [Computer Science Department Student Council #link("https://cadcc.cl")[(CaDCC)]],
+  location: [Santiago, Chile],
   date: [2024],
   description: (
-    [Member of the Computer Science Department Student Council, actively assisting in organizing various activities throughout the year.],
+    [Helped organize student activities throughout the year as a council member.],
   ),
 )
 
 #entry(
   title: [Chilean Olympiad in Informatics #link("https://olimpiada-informatica.cl")[(OCI)]],
-  date: [2021-2026],
+  location: [Chile],
+  date: [2021 -- Present],
   description: (
-    [Organizer and problem setter for Chile's premier programming competition for secondary school students, which serves as the national qualifier for the International Olympiad in Informatics (IOI).],
+    [Organize and set problems for Chile's premier programming competition for secondary school students, which serves as the national qualifier for the International Olympiad in Informatics (IOI).],
   ),
 )
 
@@ -167,7 +170,7 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
   location: [Santiago, Chile],
   date: [2020],
   description: (
-    [Volunteered as mathematics teacher at an institution that assists economically disadvantaged students in accessing higher education.],
+    [Taught mathematics at an institution that assists economically disadvantaged students in accessing higher education.],
   ),
 )
 
@@ -176,7 +179,6 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 
 #entry(
   title: [International Collegiate Programming Contest],
-  subtitle: [Competitor],
   description: (
     [*ICPC 2023:* Placed 7th in the South America/South finals. Second place in Chile. Qualified to the 2024 ICPC Latin America Championship in Guadalajara, Mexico.],
     [*ICPC 2021:* Placed 6th in the South America/South finals. First place in Chile.],
@@ -187,7 +189,6 @@ Software Engineer at Alicanto Labs, working on optimization software for strateg
 
 #entry(
   title: [IEEExtreme],
-  subtitle: [Competitor],
   description: (
     [*IEEExtreme 18.0:* Placed 45th out of 8785 teams worldwide.],
     [*IEEExtreme 15.0:* Placed 21st out of 2402 teams worldwide.],
